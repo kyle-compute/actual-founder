@@ -1,0 +1,50 @@
+today is friday so i went to the manufacturing plant to tour the facility, like i said two days ago.
+
+honestly learned a lot about what i was doing wrong.
+
+1. they need to be way fucking cheaper, not like $50 a node. i mean like $10 a node. at least that's
+what this person told me.
+
+2. i need to provide raw numbers up front like immediately. "This is how much you're losing" and so on.
+
+3. interactive diagrams need to change
+
+4. any maintenance engineer is going to look at me talking about regulation standards and stop reading there. remove that from the website tomorrow
+
+5. talk to microphone companies about data procressing
+
+6. be able to sell ice to an esikmo.
+
+7. im going about customer acquisition a bit wrong? got a bit lost when they were talking about that. 
+
+8. certain HP compressors leak a LOT, I should be trying to find companies with higher compressor power when reaching out and sort of go from the botom up.
+
+Architecture 
+
+After speaking with the maintenance engineer I realized these things need to be cheaper and way better at data processing. There has to be graphs and actual ways to deem viability. 
+
+This means i have to scrap the esp32-s3 prototype. which is fine, i was on the fence about that anyway. 
+
+However that also implies that i'm starting from near ground zero again.
+
+we're doing this based off an STM chip, i'm going to see if there's something i can possibly offload 
+with the raw pdm bitstream. maybe there's something similar for what the coral tpu does for machine learning
+on edge devices. there might be some little asic chip that can process pdm data into something usable
+without bleeding a ton of power on FIR (finite impulse response). if not i'll use a really fat one time
+battery cell.
+
+
+To summarize, we will be changing the architecture. This will be the first time I ever use an STM based 
+chip so I don't really know what to expect. 
+
+I went into this way too naively, like using esp32s off the rip for an IoT application was moronic.
+
+Need to get first pcb with stm32 validated by the end of next week. Will be a challenge it's my first time 
+messing with stm32s so i'll have to read the datasheet. I'm going to get one with i2s support, i think
+certain stm32s allow you to read the raw pdm bitstream. for now im going to stay with the FIR on chip.
+the test modules wont stay for more than a month anyway so i have plenty of time to change shit while 
+they live and crunch numbers draining battery that should last a year.
+
+really cool that i'm going in the right direction though, made a good contact today and got great feedback.
+while it was disheartening to know i have to change a bunch of things. that doesn't alter the fact that 
+it would have happened regardless. might aswell change fast instead of crying over it.
