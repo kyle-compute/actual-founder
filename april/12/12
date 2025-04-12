@@ -1,0 +1,18 @@
+not really sure what i'm doing here. kind of to be expected with massive architectural shift, but a little bit upsetting to see 
+a fair bit of work get thrown out the window. whatever.
+
+What I know right now:
+
+I need to find similar detection products, gas leak instead of air leak.
+
+Find out what they use for compute.
+
+Compare to what I know is like theoretically possible / makes sense to me
+
+Current really rough idea:
+
+STM based chip (this might be subject to change if too expensive)
+Battery has to be single use and last three years under load (gives me a slight buffer for 2 year guarantee)
+PDM data processed on or off chip (might even change sensor im using)
+LTE chip will only go on mother node as they are so fucking costly (node will be plugged into outlet)
+wireless communication is going to have to shift from espnow :/
